@@ -9,6 +9,11 @@ body{
 .codeTag{overflow: hidden;}
 .peppa{width:300px;margin:0px auto;position:relative;flex:2;}
 .peppa > *{position: absolute;}
+.cover{  
+    left:134px;top:120px;
+    height:20px;width:40px;
+    transform: rotate(25deg);
+    }
 .buttons{
     position: fixed;display: flex;flex-direction: column;left:80%;top:8%;} 
 .buttons > button{

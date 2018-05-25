@@ -7,14 +7,14 @@
         .siblings('.active').removeClass('active')
       switch(speed){
         case 'slow':
-          duration = 150
+          duration = 200
           console.log('hhh')
           break
         case 'normal':
           duration = 100
           break
         case 'fast':
-          duration = 50
+          duration = 5
           break
       }
     })
@@ -38,37 +38,24 @@
       }, duration)
     }
     let code = `/**
-*先给佩奇来一个大草地
-**/
-.grass{
-position: fixed;
-bottom:0;
-background-color: rgb(119,199,110);
-height:180px;
-width: 100%;
-}
 /**
 *现在第一步先给佩奇画上它的小脑袋
 **/
 .head{
 left:120px;top:80px;
-height:100px;width:105px;
 background-color: rgb(255,196,224);
+height:100px;width:105px;
 border:4px solid rgb(231,149,192);
 border-radius:100% 80% 80% 80%;
 }
-.cover{  
-left:134px;top:120px;
-height:20px;width:40px;
+.cover{
 background-color: rgb(255,196,224);
-transform: rotate(25deg);
 }
 /**
  * 现在呢，画上佩奇的社会吹风机
 **/
 .nose{
-height: 60px;
-width:100px;
+height: 60px;width:100px;
 background-color: rgb(255,196,224);
 border:4px solid rgb(231,149,192);
 border-radius:80% 50% 50% 80%;
@@ -119,16 +106,11 @@ border:4px solid rgb(231,149,192);
 border-radius:80% 80% 0 0;
 transform: rotate(36deg)
 }
-
 /**
  * 现在呢，画上佩奇的两只大眼睛
 **/
-.eye.left{
-top:90px;left:150px;
-}
-.eye.right{
-top:100px;left:180px;
-}
+.eye.left{top:90px;left:150px;}
+.eye.right{top:100px;left:180px;}
 .eye{
 height:20px;width:20px;
 border:4px solid rgb(231,149,192);
@@ -167,7 +149,6 @@ border:5px solid transparent;
 border-left-color:rgb(239,63,133);
 transform:rotate(-70deg);
 }
-
 /**
  * 然后给佩奇穿上小红裙
 **/
@@ -224,7 +205,6 @@ height:6px;width:60px;
 border-radius:20%;
 transform: rotate(208deg);
 top:198px;left:198px;
-
 }
 .hand.right::before{
 content:'';
@@ -273,7 +253,7 @@ transform: rotate(-15deg);
 .shadow{
 height:20px;
 width:100px;
-background-color: #589454;
+background-color: rgb(166, 168, 170);
 border-radius: 50%;
 top:270px;
 left:118px;
