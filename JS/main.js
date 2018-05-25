@@ -44,7 +44,7 @@
 position: fixed;
 bottom:0;
 background-color: rgb(119,199,110);
-height:100px;
+height:180px;
 width: 100%;
 }
 /**
