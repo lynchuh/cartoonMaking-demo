@@ -1,5 +1,5 @@
 !function(){
-    var duration = 50
+    var duration = 100
     $('.buttons').on('click', 'button', function(e){
       let $button = $(e.currentTarget) // button
       let speed = $button.attr('data-speed')
@@ -7,14 +7,14 @@
         .siblings('.active').removeClass('active')
       switch(speed){
         case 'slow':
-          duration = 100
+          duration = 150
           console.log('hhh')
           break
         case 'normal':
-          duration = 50
+          duration = 100
           break
         case 'fast':
-          duration = 10
+          duration = 50
           break
       }
     })
